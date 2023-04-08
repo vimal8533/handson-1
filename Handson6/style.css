@@ -1,0 +1,226 @@
+body {
+  background-color: gray;
+}
+.s1 {
+  border-style: solid;
+  border-width: 8px;
+  height: 150px;
+  width: 420px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 6px 6px purple;
+  text-shadow: 1.5px 1.5px purple;
+  border-color: red;
+  border-radius: 7px;
+  color: red;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  position: relative;
+  left: 35%;
+  font-style: italic;
+  font-size: 18px;
+}
+.s2 {
+  border-style: solid;
+  border-width: 8px;
+  border-color: green;
+
+  height: 530px;
+}
+
+.s3 {
+  border-style: solid;
+  border-width: 7px;
+  height: 210px;
+  width: 220px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 6px 6px purple;
+  text-shadow: 1px 1px purple;
+  border-color: red;
+  border-radius: 20px;
+  color: black;
+  float: left;
+  position: relative;
+  left: 5px;
+  font-size: 18px;
+}
+.s4 {
+  border-style: solid;
+  border-width: 7px;
+  height: 210px;
+  width: 220px;
+  background-color: white;
+  box-shadow: 6px 6px purple;
+  border-radius: 20px;
+  border-color: red;
+
+  text-align: center;
+  padding-top: 30px;
+  text-shadow: 1px 1px black;
+  float: right;
+  position: relative;
+  right: 140px;
+}
+.s5 {
+  border-style: solid;
+  border-color: red;
+  border-width: 7px;
+  background-color: rgb(12, 240, 12);
+  color: rgb(194, 65, 65);
+  height: 110px;
+  width: 600px;
+  position: fixed;
+  border-radius: 20px;
+  box-shadow: 6px 6px purple;
+  left: 420px;
+  margin-top: 200px;
+}
+.s6 {
+  border-style: solid;
+  border-width: 7px;
+  height: 210px;
+  width: 220px;
+
+  background-color: white;
+  box-shadow: 6px 6px purple;
+  text-shadow: 1.5px 1.5px darkblue;
+  border-color: red;
+  border-radius: 20px;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  float: left;
+  clear: left;
+  position: relative;
+  top: 60px;
+  left: 5px;
+}
+
+.s7 {
+  border-style: solid;
+  border-width: 7px;
+  height: 210px;
+  width: 220px;
+
+  background-color: white;
+  box-shadow: 6px 6px purple;
+  text-shadow: 1.5px 1.5px purple;
+  border-color: red;
+  border-radius: 20px;
+  color: black;
+
+  text-align: center;
+  float: right;
+  position: relative;
+  left: 100px;
+  top: 60px;
+  font-weight: bold;
+}
+input[type="number"] {
+  width: 80px;
+  height: 5px;
+}
+input[type="submit"] {
+  height: 15px;
+  width: 80px;
+  border-radius: 15px;
+  box-shadow: 1px;
+  background-color: red;
+}
+.s8 {
+  background-color: green;
+  border-style: solid;
+  border-width: 7px;
+  border-color: purple;
+  width: 650px;
+  height: 570px;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 390px;
+}
+
+.s9 {
+  width: 310px;
+  height: 220px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(86, 83, 83);
+  background-color: rgba(239, 207, 5, 0.838);
+  text-align: center;
+  float: left;
+  margin-left: 8px;
+  font-weight: bold;
+  font-style: italic;
+}
+.s12 {
+  width: 310px;
+  height: 220px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(86, 83, 83);
+  background-color: rgba(239, 207, 5, 0.838);
+  text-align: center;
+  float: right;
+  margin-right: 8px;
+  font-weight: bold;
+  font-style: italic;
+}
+.s10 {
+  width: 650px;
+  height: 220px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(86, 83, 83);
+  background-color: rgba(239, 207, 5, 0.838);
+  text-align: center;
+  float: left;
+  margin-top: 20px;
+  margin-left: 8px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.fixed1 {
+  height: 80px;
+  width: 280px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: red;
+  position: relative;
+  left: 20px;
+}
+.fixed2 {
+  float: right;
+  height: 80px;
+  width: 250px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: red;
+  position: relative;
+  bottom: 110px;
+  right: 20px;
+}
+.rate1 {
+}
+.rate2 {
+  display: inline-block;
+  position: relative;
+  top: 20px;
+}
+button {
+  border-radius: 50px;
+  background-color: red;
+  font-size: 10px;
+}
+h4 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+}
+.lststyle {
+  font-weight: bold;
+  font-size: 30px;
+}
