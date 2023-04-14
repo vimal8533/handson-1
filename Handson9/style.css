@@ -214,6 +214,7 @@ h3{
         font-size: 30px;
     }
     .box{
+        padding-left:-10px;
         position: relative;
         left: 55px;
     }
