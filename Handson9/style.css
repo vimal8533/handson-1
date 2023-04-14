@@ -1,0 +1,226 @@
+body{
+    background-image: url(./shara\ desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contener-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.navbar{
+    display: flex;
+    padding-right: 100px;
+}
+ul li{
+    list-style: none;
+    margin: 0px 20px;
+    display: inline-block;
+    padding: 0px 10px;
+    color: antiquewhite;
+    font-size: 15px;
+
+}
+.logo1{
+    padding-left: 100px;
+}
+.contener-2{
+    display: flex;
+}
+.contentbox{
+    width: 50%;
+    
+    height: 500px;
+    color: white;
+    padding-left: 100px;
+    padding-top: 100px;
+    
+    
+
+}
+h1{
+    font-size: 80px;
+}
+button{
+    background-color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bold;
+    
+}
+
+.gridbox{
+    
+    
+    height: 500px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    height: 500px;
+    row-gap: 20px;
+    column-gap: 100px;
+    width: 50%;
+    position: relative;
+    left: 5px;
+
+
+}
+.box{
+    height: 260px;
+    width: 250px;
+    
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.box1{
+    background-image: url(./pic-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+h3{
+    position: relative;
+    left: 30px;
+}
+.para1{
+    position: relative;
+    left: 30px;
+    font-size: 12px;
+    line-height: 30px;
+}
+.box2{
+    background-image: url(./pic-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.box3{
+    background-image: url(./pic-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.box4{
+    background-image: url(./pic-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.box:hover{
+    
+    transform: translateY(-10px);
+    
+}
+@media screen and (min-width:500px) and (max-width:900px){
+    .contener-2{
+        display: block;
+    }
+    .gridbox{
+        display:block;
+        position: relative;
+        left: 160px;
+        bottom: 370px;            
+    }
+    .box{
+        height: 200px;
+        width: 550px;
+        margin: auto;
+    }
+    .logo1{
+        width: 60px;
+        padding-left: 30px;
+    }
+   
+    .navbar{
+        padding-right: 50px;
+    }
+    .navbarsize{
+        width: 35px;
+    }
+    .contener-1{
+        margin-top: 20px;
+        height: 30px;
+    }
+    .contentbox{
+        width: 70%;
+        
+        height: 600px;
+        color: white;
+        padding-left: 60px;
+        padding-top: 15px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .para2{
+        line-height: 15px;
+    }
+    button{
+        position: relative;
+        left: 5px;
+        top: 50px;
+    }
+    .box1{
+        background-size: cover;
+        background-position: center;
+    }
+    .box2{
+        background-size: cover;
+        background-position: center;
+    }
+    .box3{
+        background-size: cover;
+        background-position: center;
+    }
+    .box4{
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media screen and (min-width:280px) and (max-width:500px){
+    .contener-2{
+        display: block;
+    }
+    .gridbox{
+        display: block;
+        bottom: 500px;
+        
+    }
+    .logo1{
+        width: 60px;
+        padding-left: 10px;
+    }
+    .navbar{
+        padding-right: 20px;
+    }
+    .navbar-menu{
+        position: relative;
+        left: 70px;
+        bottom: 25px;
+
+    }
+    .contentbox{
+        width: 70%;
+        
+        height: 600px;
+        position: relative;
+        right: 80px;
+        bottom: 145px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .box{
+        position: relative;
+        left: 55px;
+    }
+    body{
+        background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    
+}
