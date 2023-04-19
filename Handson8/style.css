@@ -1,0 +1,190 @@
+body{
+    background-color: rgb(247, 247, 68);
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.num{
+    margin-top: 110px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.box1{
+    height: 120px;
+    width: 120px;
+    background-color: gray;
+    border: solid black 1px;
+    animation: anim1 infinite 2.5s alternate;
+
+}
+@keyframes anim1{
+    0%{
+        transform:skewX(-30deg);
+    }
+    100%{
+        transform:skewX(30deg);
+    }
+}
+.box2{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(96, 78, 78);
+    border: solid black 1px;
+    animation: anim2 infinite 2.5s alternate;
+}
+@keyframes anim2{
+    0%{
+        transform: skewY(-30deg);
+    }
+    100%{
+        transform: skewY(30deg);
+    }
+}
+.box3{
+    height: 120px;
+    width: 120px;
+    background-color: gray;
+    border: solid black 1px;
+    animation: anim3 infinite 2.5s ;
+}
+@keyframes anim3{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box4{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(96, 78, 78);
+    border: solid black 1px;
+    animation: anim4 infinite 2.5s ;
+}
+@keyframes anim4{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1,1.5);
+    }
+}
+.box4-1{
+    height: 120px;
+    width: 120px;
+    background-color:brown;
+    border: solid black 1px;
+    animation: anim4-1 infinite 2.5s ;
+}
+@keyframes anim4-1{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(0.5,1);
+    }
+}
+.box4-2{
+    height: 120px;
+    width: 120px;
+    background-color:green;
+    border: solid black 1px;
+    animation: anim3 infinite 2.5s ;
+}
+.anchor{
+    
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.main{
+   
+    position: relative;
+    bottom: 80px;
+}
+.boxs1{
+    height: 120px;
+    width: 120px;
+    border: solid 1px black;
+    background-color: green;
+    transition: all 2s ;
+}
+
+:hover.boxs1{
+    width: 280px;
+}
+.boxs2{
+    height: 120px;
+    width: 120px;
+    border: solid 1px black;
+    background-color: green;
+    transition: all 2s ease-out;
+}
+:hover.boxs2{
+    width: 300px;
+    height:350px;
+    
+}
+.boxs3{
+    height: 120px;
+    width: 120px;
+    border: solid 1px black;
+    background-color: green;
+    transition: all 2s ease-in-out;
+}
+:hover.boxs3{
+    width: 320px;
+}
+.boxs4{
+    height: 120px;
+    width: 120px;
+    border: solid 1px black;
+    background-color: green;
+    transition: all 2s ease-out;
+}
+:hover.boxs4{
+    width: 300px;
+}
+.boxs5{
+    height: 120px;
+    width: 120px;
+    border: solid 1px black;
+    background-color: green;
+    transition: all 2s ease-in;
+}
+:hover.boxs5{
+    width: 300px;
+}
+.boxs6{
+    height: 120px;
+    width: 120px;
+    border: solid 1px black;
+    background-color: green;
+    transition: all 2s ease;
+}
+:hover.boxs6{
+    width: 300px;
+}
+.boxs7{
+    height: 120px;
+    width: 120px;
+    border: solid 1px black;
+    background-color: green;
+    transition: all 2s ;
+}
+:hover.boxs7{
+    width: 300px;
+}
+ol{
+    padding-top: -80px;
+}
