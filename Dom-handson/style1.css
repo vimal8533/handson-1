@@ -1,0 +1,67 @@
+.parrentbox{
+    display: flex;
+    justify-content:space-between;
+    color: aliceblue;
+}
+.first_heading{
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    top: 80px;
+    
+}
+.boxtwo{
+    position: relative;
+    top: 130px;
+    border: solid 2px black;
+}
+#boxthree{
+    height: 90px;
+    width: 90px;
+    border: solid 1px black;
+    position: relative;
+    top: 80px;
+    left: 710px;
+    z-index: 5;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 60px;
+}
+input{
+    height: 90px;
+    width: 160px;
+    font-size: 40px;
+    text-align: center;
+    /* background-color: rgb(97, 39, 39); */
+    background-color: gray;
+    color: aliceblue;
+    
+}
+.check{
+    position: relative;
+    left: 45px;
+    top: 15px;
+    height: 35px;
+    width: 80px;
+}
+.fourthbox{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 150px;
+}
+body{
+    background-color: gray;
+}
+.innerbox{
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+.playagain{
+    height: 50px;
+    width: 100px;
+}

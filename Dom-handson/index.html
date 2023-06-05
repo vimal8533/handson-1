@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Hands-on</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p class="heading">DOM-Documnet Object Model</p>
+    <p>Q.Write the code to access element which is having id as "text"</p>
+    <pre> Ans:let forid=document.getElementById("text")
+                 console.log(forid.innerHTML)
+ output:  
+                </pre>
+<div id="text">Prepbytes</div>
+<p>Q.Write the code to access element which is having tag as "h1"</p>
+    <pre> Ans:let heading=document.getElementsByTagName("h1")
+        console.log(heading[0].innerHTML)
+ output:  
+                </pre>
+<h1>My name is Vimal Kumar</h1>
+<p>Q.Write the code to access element which is having class as "box"</p>
+    <pre> let forclass=document.getElementsByClassName("box")
+        console.log(forclass[0].innerHTML);
+ output:  
+                </pre>
+<div class="box">Elvation Class</div>
+<p>Q."h1 hello Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</p>
+<pre>heading[1].addEventListener('click',()=>{
+    heading[1].innerHTML="Hello World"
+})
+output:</pre>
+<h1>Hello</h1>
+<p>Q.Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</p>
+<pre>function change_me(){
+    heading[2].innerHTML="Welcome to Elevation academy"
+ }
 
+output:</pre>
+
+ <h1>Hello world</h1>
+<button onclick="change_me()">Replace Text</button>
+<p>Q.h1 Hello
+    Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</p>
+<pre>let id_heading=document.getElementById("heading");
+    let count =0;
+    id_heading.addEventListener('click', ()=>{
+        
+        
+        if(count%2===0){
+            id_heading.style.color="red";
+            count++;
+        }else{
+            id_heading.style.color="yellowgreen";
+            count--;
+        }
+    })
+
+output:</pre>
+ <h1 id="heading">Hello</h1> 
+ <p>Q.Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</p>
+<pre>let parentbox=document.getElementById('parentbox')
+    function changedirection(){
+        if(count%2===0){
+            parentbox.style.display='block';
+        parentbox.style.gap='10px';
+            count++;
+        }else{
+            parentbox.style.display='flex';
+            count--;
+        }
+        
+        
+    }
+output:
+</pre>    
+ <div id="parentbox">
+    <div class="childbox"></div>
+    <div class="childbox"></div>
+    <div class="childbox"></div>
+ </div> 
+ <button onclick="changedirection()">Change Flex Dirction</button>  
+<p>Q.What’s the difference between window vs document?</p>
+<pre>Ans:</pre>
+ <table>
+    <tr>
+    <td>Window</td>
+    <td>Document</td>
+</tr>
+    <tr><td>The window object is the topmost object of the DOM hierarchy.</td> 
+        <td>The document object represent a web page that is loaded in the browser. </td> 
+    </tr>
+    <tr>
+        <td>It represents a browser window or frame that displays the contents of the webpage.By accessing the document object, we can access the element in the HTML page.</td>
+        <td>By accessing the document object, we can access the element in the HTML page. </td>
+    </tr>
+        <tr>
+            <td>Whenever a window appears on the screen to display the contents of the document, the window object is created.</td>
+        <td>With the help of document objects, we can add dynamic content to our web page.</td>
+        </tr>
+    </table>
+    <p>Q.Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</p>
+    <pre>let heading2=document.getElementsByTagName("h2");
+        heading2[0].addEventListener('click' ,()=>{
+            function startclock(){
+                let time=new Date();
+                let hrs = time.getHours();
+                let min= time.getMinutes();
+                let secs=time.getSeconds();
+                let AMPM="AM";
+                if(hrs>12){
+                hrs -=12;
+                AMPM="PM"
+                }
+                console.log(`Time : ${hrs}:${min}:${secs} `);
+                heading2[1].innerHTML=`${hrs}:${min}:${secs} ${AMPM}`
+            }
+            setInterval(() =>{
+                startclock();
+                console.log('Hello EA23')
+            },1000)
+           
+        })
+    output:
+        </pre>
+    <h2>Start clock</h2>
+    <h2></h2>
+    <p>Q.Gusseing game Question </p>
+    <a href="./index1.html">Click Here</a>
+
+<script src="./script.js"></script>
+</body>
+</html>

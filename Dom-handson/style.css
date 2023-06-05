@@ -1,0 +1,48 @@
+#text{
+    font-size: 25px;
+    font-weight: bold;
+    color: aqua;
+}
+h1{
+    color: yellowgreen;
+    font-style: italic;
+}
+.box{
+    height: 80px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: lightblue;
+    color: brown;
+    font-size: 20px;
+    text-align: center;
+}
+.childbox{
+    height: 250px;
+    width: 200px;
+    border: black solid 1px;
+    background-color: chocolate;
+}
+#parentbox{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+table,td,tr{
+    margin-top: 20px;
+    text-align: center;
+    border: solid black 1px;
+}
+p{
+    font-size: 25px;
+    background-color: chartreuse;
+}
+body{
+    background-color: coral;
+}
+.heading{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
