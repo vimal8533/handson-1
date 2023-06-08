@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: aquamarine;
+    background-color: burlywood;
+    text-align: center;
+    top: 20px;
+    font-style: oblique;
+}
+body{
+    background-image: radial-gradient(lightseagreen 15%, greenyellow 65%);
+}
+p{
+    font-size: 30px;
+    color: lightseagreen;
+    background-color: lightgray;
+    margin-top: 30px;
+    font-style: italic;
+}
+pre{
+    color: yellow;
+    background-color: teal;
+    font-size: 25px;
+}
