@@ -1,0 +1,19 @@
+h1{
+color: lightcoral;
+text-align: center;
+font-style: oblique;
+font-size: 50px;
+}
+
+body{
+    background-image: linear-gradient(teal,lightgreen)
+}
+p{
+    margin-top: 20px;
+    font-size: 25px;
+    font-style: italic;
+}
+pre{
+     font-size: 25px;
+    font-style: italic;
+}
