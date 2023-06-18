@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Object</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+    <h1>Array Of Object</h1>
+
+    <pre class="pr1">
+        "let studentRecords = [ {name: 'John', id: 123, marks : 98 },
+    {name: 'Baba', id: 101, marks : 23 },
+    {name: 'yaga', id: 200, marks : 45 },
+    {name: 'Wick', id: 115, marks : 75 } ] "
+    </pre>
+    
+<p>Q1. "We are interested in retrieving only the students' names; all the names should be in caps.
+
+      ['JOHN', 'BABA', 'YAGA', 'WICK']"
+</p>
+<pre>
+    Ans:
+    let studentRecords = [ {name: 'John', id: 123, marks : 98 },
+    {name: 'Baba', id: 101, marks : 23 },
+    {name: 'yaga', id: 200, marks : 45 },
+    {name: 'Wick', id: 115, marks : 75 } ]
+
+
+    studentRecords.map((item) =>{
+        console.log(item.name.toUpperCase());
+    })
+
+
+    Output:JOHN
+           BABA
+           YAGA
+           WICK
+
+</pre>
+<p>Q2."Suppose we have the same dataset as above but this time we want to get the details of students who scored more than 50 marks.
+
+    [{name: 'John', id: 123, marks: 98 },{name: 'Wick', id: 115, marks: 75 }]"</p>
+<pre>Ans:
+    studentRecords.map((item) =>{
+        if(item.marks>50){
+            console.log(item);
+        }
+    })
+
+    Output:{name: 'John', id: 123, marks: 98}
+           {name: 'Wick', id: 115, marks: 75}
+</pre>
+<p>Q3. Retrieve the details of students who scored more than 50 marks and have IDs greater than 120.</p>
+<pre>
+    Ans:
+    studentRecords.map((item) =>{
+        if(item.marks>50 && item.id>120){
+            console.log(item);
+        }
+    })
+
+    Output:{name: 'John', id: 123, marks: 98}
+</pre>
+<p>Q4. Consider the same scenario we have discussed above, but this time we would like to know the sum total of the marks of the students.</p>
+<pre>
+    Ans:
+    let totalmarks=studentRecords.reduce((pre,cur)=>{
+
+        return pre+=cur.marks
+    },0)
+    console.log(totalmarks);
+    Output:241
+</pre>
+<p>Q5. This time we want to get only the names of the students who scored more than 50 marks from the same dataset used above.</p>
+<pre>
+    Ans:
+    studentRecords.map((item)=>{
+        if(item.marks>50){
+            console.log(item.name);
+        }
+    })
+
+    Output:John
+           Wick
+</pre>
+<p>Q6. This time we are required to print the sum of marks of the students with id > 120.</p>
+<pre>
+    Ans:
+    function markssum(record){
+        let sum=0
+        for(let i=0 ; i< record.length;i++ ){
+            if(record[i].id>120){
+                sum+=record[i].marks;
+            }
+        }
+        return sum
+        }
+        console.log(markssum(studentRecords));
+    Output:143
+</pre>
+<p>Q7. This time we are required to print the total marks of the students with marks greater than 50 after a grace of 15 marks has been added to those students who scored less than 50.</p>
+<pre>Ans:
+    function markssum50(record){
+        let sum1=0
+        for(let i=0 ; i< record.length;i++){
+            if(record[i].marks>50){
+                sum1+=record[i].marks;
+            }else if(record[i].marks< 50){
+                sum1+=record[i].marks+15
+            }
+        }
+        return sum1
+        }
+    console.log(markssum50(studentRecords));
+
+    Output:271
+</pre>
+<p>Q8. Create 6 objects , each object will have name, class, roll no as properties. Store these objects in an array of objects. </p>
+<pre>
+    Ans:
+        
+      const object=[
+     {name:"Vimal",class:10,rollno:20},
+     {name:"Vimal",class:10,rollno:20},
+     {name:"Vimal",class:10,rollno:20},
+     {name:"Vimal",class:10,rollno:20},
+     {name:"Vimal",class:10,rollno:20},
+     {name:"Vimal",class:10,rollno:20}
+     ]
+     console.log(object)
+     Output:
+     {name: 'Vimal', class: 10, rollno: 20} 
+     {name: 'Vimal', class: 10, rollno: 20}
+     {name: 'Vimal', class: 10, rollno: 20} 
+     {name: 'Vimal', class: 10, rollno: 20}
+     {name: 'Vimal', class: 10, rollno: 20}
+     {name: 'Vimal', class: 10, rollno: 20}
+</pre>
+    <script src="./script.js"></script>
+</body>
+</html>
