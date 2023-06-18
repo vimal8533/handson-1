@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <h1>Inheritance and prototype</h1>
 
+    <p>Q1. Create 2 objects - parent and child. Attach methods to parent and use those methods in child object using parents prototype</p>
+    <pre>Ans:
+        const father = {
+            talent:function(){
+                console.log(`${this.name} and the age ${this.age}`);
+            }
+        
+        }
+        
+        
+        const son1=Object.create(father)
+            son1.name="Vimal Kumar";
+            son1.age="53"
+            son1.talent()
+        const son2=Object.create(father)
+            son2.name="Dabloo Kumar"
+            son2.age=25
+            son2.talent();
+        Output:Vimal Kumar and the age 53
+               Dabloo Kumar and the age 25        
+    </pre>
+
+<p>Q2. Write code to explain prototype chaining</p>
+<pre>
+    Ans:
+    const Gfather={
+        Hello:function(){
+            console.log("Hello Grandfather")
+        }
+    }
+    
+    const father1=Object.create(Gfather);
+        father.Hell0=function(){
+            console.log("Hi to grand father")
+        }
+    const you=Object.create(father1);
+        you.hi=function(){
+            console.log("hi");
+        }
+    
+    
+    
+    you.Hello();
+
+    Output: Hello Grandfather
+    Explanation:Prototype chaining is a mechanism in JavaScript that allows 
+                objects to inherit properties and methods from other objects.
+                It is based on the prototype model of object-oriented programming.
+                This chain of objects linked through their prototypes forms the prototype 
+                chain. When a property or method is accessed on an object, JavaScript traverses 
+                this chain until it finds the property or reaches the end of the chain. 
+                If the property is found, it is returned; otherwise, undefined is returned.
+    </pre>
+
+<p>Q3.Add a method to calculate sum of all elements in Array in array's protype, use that method to calculate sum for multiple arrays</p>
+
+<pre>
+    Ans:
+    Array.prototype.Calsum=function(){
+        let sum =0;
+        for(let i=0;i < this.length ; i++){
+            sum+=this[i];
+        }
+        return sum;
+    }
+    const arr1=[12,36,98,74 ]
+    const arr2=[10,36,98,20]
+    const arr3=[1,2,3,4,5,6,7,8,9,10]
+    
+    console.log(arr1.Calsum());
+    console.log(arr2.Calsum());
+    console.log(arr3.Calsum());
+    
+        Output:220
+               164
+                55
+</pre>
+<p>Q4. Write a JavaScript function to retrieve all the names of object's own and inherited properties.</p>
+<pre>
+    Ans:
+    const obj1={
+        Name:"Vimal Kumar",
+        Age:25,
+        Class:12,
+        School:"Prepbytes"
+    }
+    
+    console.log(Object.getOwnPropertyNames(obj1));
+    Output:['Name', 'Age', 'Class', 'School']
+</pre>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
