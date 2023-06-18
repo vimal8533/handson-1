@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clouser</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <h1>Clouser</h1>
+   <p>Q1. "    function counter(){
+    var counter = 0;
 
+    function IncreaseCounter() {
+        return counter += 1;
+    };
+
+    return IncreaseCounter;
+}
+
+var counter = counter();
+alert(counter());
+alert(counter());
+alert(counter());
+alert(counter());"</p> 
+<pre>
+    Ans:
+        Output:In this it give alert and in the alert it call counter function and in the counter function 
+        their is  an another function to IncreaseCounter the counter . 
+</pre>
+<p> Q2. "let count = 0;
+    (function () {
+      if (count === 0) {
+        let count = 1;
+        console.log(count); // What is logged?
+      }
+      console.log(count); // What is logged?
+    })();"</p>
+<pre>
+    Ans:
+        Output:1
+               0
+        Explanation:In the given code, the variable count is declared and initialized with 
+                  a value of 0 outside of the immediately-invoked function expression (IIFE). 
+</pre>
+<p> Q3."for (var i = 0; i < 3; i++) {
+    setTimeout(function log() {
+      console.log(i); // What is logged?
+    }, 1000);
+  }"
+</p>
+<pre>Ans: 
+            3
+            3
+            3
+     Explanation:A for loop is used to iterate from 0 to 2. Inside the loop, a setTimeout function 
+                 is called with a delay of 1000 milliseconds (1 second). 
+                 The setTimeout function contains an anonymous function that logs the value of the variable i.
+</pre>
+<p>Q4.Write a code to calculate area of a rectangle using inner function. In this case outer function should accept parameter length and inner function should accept parameter breadth.</p>
+<pre>Ans:function outer(len){
+    // let breath=20
+    function inner(breath){
+    return breath*len
+    }
+    return inner;
+    }
+    const area=outer(5);
+    console.log(area(8));
+     Output:    40
+     Explanation:
+
+</pre>
+<p>Q5. Take a variable in outer function and create an inner function to increase the counter every time it is called</p>
+<pre>Ans: function counter() {
+         let counter = 0;
+
+         function inccount() {
+          counter++;
+         console.log(counter);
+         }
+
+         return inccount;
+       }
+
+const count1= counter();
+count1();
+count1();
+count1();
+    Output
+
+
+
+</pre>
+
+<p>Q6."Print Output
+
+    var a = 12;
+    (function () {
+      alert(a);
+    })();"</p>
+<pre>Ans:
+    var a = 12;
+    (function () {
+      alert(a);
+    })();
+        output:It gives alert to browser with the value 12.
+</pre>
+<p>Q7."var a = 10;
+    var x = (function () {
+      var a = 12;
+      return function () {
+        alert(a);
+      };
+    })();
+    x();"</p>
+<pre>Ans: The variable x is assigned the result of an immediately-invoked function expression (IIFE).
+          In the IIFE, a new variable a is declared and assigned a value of 12. Then, the IIFE returns an anonymous function.
+          X() is return with the value aler 12
+</pre>
+<p>Q8. "var globalVar = ""xyz"";
+
+    (function outerFunc(outerArg) {
+        var outerVar = 'a';
+        
+        (function innerFunc(innerArg) {
+        var innerVar = 'b';
+        
+        console.log(
+            ""outerArg = "" + outerArg + ""\n"" +
+            ""innerArg = "" + innerArg + ""\n"" +
+            ""outerVar = "" + outerVar + ""\n"" +
+            ""innerVar = "" + innerVar + ""\n"" +
+            ""globalVar = "" + globalVar);
+        
+        })(456);
+    })(123);"</p>
+<pre>Ans:
+    var globalVar = "xyz";
+
+    (function outerFunc(outerArg) {
+        var outerVar = 'a';
+        
+        (function innerFunc(innerArg) {
+        var innerVar = 'b';
+        
+        console.log(
+            "outerArg = " + outerArg + "\n" +
+            "innerArg = " + innerArg + "\n" +
+            "outerVar = " + outerVar + "\n" +
+            "innerVar = " + innerVar + "\n" +
+            "globalVar = " + globalVar);
+        
+        })(456);
+    })(123);
+   
+    Output:  outerArg = 123
+             innerArg = 456
+             outerVar = a
+            innerVar = b
+            globalVar = xyz  
+
+</pre>
+    <script src="./script.js"></script>
+</body>
+</html>
