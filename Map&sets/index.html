@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map & sets</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>MAP & SETS</h1>
+    <p>Q1. "Problem:
+        You are given a string (STR) of length N, consisting of only the lower case English alphabet.
+        Your task is to remove all the duplicate occurrences of characters in the string.
+        
+        Input:
+        abcadeecfb
+        
+        Output:
+        abcdef"</p>
+        <pre>
+            Ans:
+                Output:abcdef
+                function uniquechar(string){
+                    let Unique = new Set();
+                    let result = ""
+                    
+                    for(let char of string ){
+                        if(!Unique.has(char)){
+                            Unique.add(char)
+                            result += char
+                        }
+                    
+                    }
+                    return result
+                       
+                }
+                        
+                
+                output = uniquechar(input)
+                console.log(output); 
+                
+        </pre>
+        <p>Q2. "Problem:
+            You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps)
+            
+            Input:
+            abcadeecfb
+            
+            Output:
+            a=2
+            b=2
+            c=2
+            d=1
+            e=2
+            f=1"</p>
+            <pre>
+                output:
+                a=2
+                b=2
+                c=2
+                d=1
+                e=2
+                f=1
 
+                function countchar(string) {
+                    let CountMap = new Map();
+                  
+                    for (let word of string) {
+                      if (CountMap.has(word)) {
+                        CountMap.set(word, CountMap.get(word) + 1);
+                      } else {
+                    CountMap.set(word, 1);
+                      }
+                    }
+                  
+                    for (let [word, count] of CountMap) {
+                      console.log(`${word}=${count}`);
+                    }
+                  }
+                  
+                  countchar(input);
+                  
+            </pre>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
